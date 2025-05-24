@@ -1,0 +1,78 @@
+body {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+  .calculator {
+    background: #2c2c2c;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.5);
+    padding: 32px 24px 24px 24px;
+    width: 350px;
+  }
+  .display {
+    background: #111;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 8px;
+    padding: 20px 10px;
+    text-align: right;
+    margin-bottom: 18px;
+    min-height: 48px;
+    letter-spacing: 1px;
+    overflow-x: auto;
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+  .btn {
+    background: #383838;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    padding: 18px 0;
+    cursor: pointer;
+    transition: background 0.2s;
+    outline: none;
+  }
+  .btn:active {
+    background: #444;
+  }
+  .btn.operator {
+    background: #ff9500;
+    color: #fff;
+  }
+  .btn.equal {
+    background: #00c853;
+    color: #fff;
+    grid-column: span 2;
+  }
+  .btn.clear {
+    background: #d32f2f;
+    color: #fff;
+  }
+  .btn.scientific {
+    background: #3949ab;
+    color: #fff;
+  }
+  @media (max-width: 400px) {
+    .calculator {
+      width: 98vw;
+      padding: 16px 4px;
+    }
+    .display {
+      font-size: 1.2rem;
+      padding: 10px 2px;
+    }
+    .btn {
+      padding: 12px 0;
+      font-size: 1rem;
+    }
+  }
+  
